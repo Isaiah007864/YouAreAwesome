@@ -16,7 +16,6 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Spacer()
             
             Image(imageName)
                 .resizable()
@@ -35,11 +34,11 @@ struct ContentView: View {
             
             Button("Show Message") {
                 let messages = ["You Are Awesome!",
+                                "When the Genius Bar Needs Help, They Call You!",
                                 "You Are Great!",
                                 "You Are Fantastic",
                                 "Fabulous? That's You!",
-                                "You Make Me Smile!",
-                                "When the Genius Bar Needs Help, They Call You!"]
+                                "You Make Me Smile!"]
                 
                 message = messages[messageNumber]
                 messageNumber += 1
