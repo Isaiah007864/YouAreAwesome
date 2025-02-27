@@ -16,18 +16,17 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            Text(message)
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .foregroundStyle(.red)
+                .multilineTextAlignment(.center)
             
             Image(imageName)
                 .resizable()
                 .scaledToFit()
                 .clipShape(RoundedRectangle(cornerRadius: 30))
                 .shadow(radius: 30)
-            
-            Text(message)
-                .font(.largeTitle)
-                .fontWeight(.heavy)
-                .foregroundStyle(.red)
-                .multilineTextAlignment(.center)
             
             Spacer()
             
